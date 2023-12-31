@@ -26,7 +26,10 @@ android {
     namespace "com.example.cat_dog_detector"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
-
+    aaptOptions {
+        noCompress 'tflite'
+        noCompress 'lite'
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
